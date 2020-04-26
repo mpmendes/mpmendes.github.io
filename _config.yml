@@ -17,13 +17,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-
 title: Miguel Mendes
 email: ""
 description: >- # this means to ignore newlines until "baseurl:"
   A curious software developer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "mpmendes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  mpmendes
 
@@ -42,8 +41,6 @@ defaults:
       type: "pages"
     values:
       layout: default
-
-
   
 permalink: /:categories/:title
 # Exclude from processing.
@@ -54,10 +51,9 @@ permalink: /:categories/:title
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
- exclude:
-    - .sass-cache/
-    - .jekyll-cache/
-    - gemfiles/
-    - Gemfile
-    - Gemfile.lock
-    - vendor/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
