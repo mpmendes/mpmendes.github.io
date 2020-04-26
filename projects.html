@@ -1,8 +1,76 @@
----
-layout: default
-title: Projects
----
-<script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keyword" content="miguelmendes miguel mendes sofware developer" />
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">     
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Tachyons -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin=""/>
+        
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Projects | Miguel Mendes" />
+    <meta property="og:description" content=" | A curious software developer." />
+    <meta property="og:site_name" content="Projects | Miguel Mendes" />
+    <title>Miguel Mendes | Projects</title>
+</head>
+
+<body>
+    <!-- Include NavBar -->
+      <!-- Navigation -->
+        <nav id="top-section" class="navbar navbar-expand-sm navbar-dark scrolling-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto smooth-scroll">
+                  <li id="link-home" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li id="link-resume" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="/resume/">Resume</a>
+                  </li>
+                  <li id="link-projects" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="/projects/">Projects</a>
+                  </li>
+                  <li id="link-contact" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="/contact/">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          
+
+<!-- Because of updating the active navbar items, we have to call out the libraries before the actual content
+    otherwise there is no update on the active items -->
+    <script src="/assets/vendor/jquery.min.js"></script>
+    <script src="/assets/vendor/popper.min.js"></script>
+    <script src="/assets/vendor/bootstrap.min.js"></script>
+
+    
+    <!-- Page content -->
+    <script>
     $(document).ready(function(){
         $(".active").removeClass("active");
         $("#link-projects").addClass("active");
@@ -14,3 +82,64 @@ title: Projects
 <div class="general-container" style="margin-top: -56px; background-color:black;">
     <p>Under construction.</p>
 </div>
+
+
+    <!-- Include footer -->
+    <footer id="footer-element" class="py-3">
+    <div class="container">
+        <div class="text-container">
+            <p id="svg-logo" class="align-center text-white mb-3">
+                    <div class="align-center fixed-action-btn smooth-scroll">
+                        <a href="#top-section" class="btn-floating btn-large blue">
+                          <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>   
+                <span class="sr-only"> Click to go to the top</span>
+            </p>
+            <div class="align-center">
+                  <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc" href="https://github.com/mpmendes" title="GitHub">
+                    <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M8 0C3.58 0 0 3.582 0 8c0 3.535 2.292 6.533 5.47 7.59.4.075.547-.172.547-.385 0-.19-.007-.693-.01-1.36-2.226.483-2.695-1.073-2.695-1.073-.364-.924-.89-1.17-.89-1.17-.725-.496.056-.486.056-.486.803.056 1.225.824 1.225.824.714 1.223 1.873.87 2.33.665.072-.517.278-.87.507-1.07-1.777-.2-3.644-.888-3.644-3.953 0-.873.31-1.587.823-2.147-.083-.202-.358-1.015.077-2.117 0 0 .672-.215 2.2.82.638-.178 1.323-.266 2.003-.27.68.004 1.364.092 2.003.27 1.527-1.035 2.198-.82 2.198-.82.437 1.102.163 1.915.08 2.117.513.56.823 1.274.823 2.147 0 3.073-1.87 3.75-3.653 3.947.287.246.543.735.543 1.48 0 1.07-.01 1.933-.01 2.195 0 .215.144.463.55.385C13.71 14.53 16 11.534 16 8c0-4.418-3.582-8-8-8"/></svg>
+                    <span class="f6 ml3 pr2">GitHub</span>
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc" href="https://linkedin.com/in/miguelpmendes" title="LinkedIn">
+                    <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51V7.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"/></svg>
+                    <span class="f6 ml3 pr2">LinkedIn</span>
+                    <span class="sr-only">(current)</span>
+                  </a>
+                  <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc" href="https://www.xing.com/profile/Miguel_Mendes6" title="Xing">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="30" height="30" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-14.085 15l2.744-4.825-1.846-3.162h3.292l1.83 3.152-2.744 4.835h-3.276zm8.79-1.445l3.514 6.445h-3.252l-3.55-6.445 5.38-9.555h3.289l-5.381 9.555z"/></svg>
+                    <span class="f6 ml3 pr2">Xing</span>
+                    <span class="sr-only">(current)</span>
+                    </a>
+                  <a class="link white-60 bg-transparent hover-white inline-flex items-center ma2 tc" href="http://localhost:4000contact/" title="E-mail">
+                    <svg class="dib h2 w2" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                        <path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H21V7.387l-9 6.463-9-6.463V21H1.5C.649 21 0 20.35 0 19.5v-15c0-.425.162-.8.431-1.068C.7 3.16 1.076 3 1.5 3H2l10 7.25L22 3h.5c.425 0 .8.162 1.069.432.27.268.431.643.431 1.068z"/>
+                    </svg>
+                    <span class="f6 ml3 pr2">E-mail</span>
+                    <span class="sr-only">(current)</span>
+                  </a>
+
+            </div>
+            <p class="align-center text-white mt-3">
+                &copy; <span id="year"></span> Miguel Mendes
+            </p>
+        </div>
+    </div>
+</footer>
+
+<!-- AOS Javascript -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- Custom Contact Page Javascript -->
+<script src="http://localhost:4000assets/js/contact.js"></script>  
+<!-- Custom Footer Javascript -->
+<script src="http://localhost:4000assets/js/footer.js"></script>  
+
+
+
+
+</body>
+</html>
