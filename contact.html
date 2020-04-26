@@ -1,0 +1,88 @@
+---
+layout: default
+title: Contact
+---
+<script>
+        $(document).ready(function() {
+            $(".active").removeClass("active");
+            $("#link-contact").addClass("active");
+        });
+</script>
+
+
+<!-- Background Contact Page -->
+<header id="contactBackground" class="general-container">
+    <div class="jumbotron jumbotron-fluid transparent-color">
+      <div class="container">
+            <p class="display-4 lead" data-aos="fade-in">Get in touch.</h1>
+            <p class="h2" data-aos="fade-in">Contact me by filling out the form below.</p>
+
+      </div>
+    </div>
+</header>
+
+  <!-- Contact form -->
+    <section class="h-100 bg-gradient-light">
+
+        <div class="py-5 container">
+            <form id="contact-form" data-aos="fade-in" action="https://formspree.io/mlewqvvy"  method="post" role="form">
+                <div class="messages"></div>
+    
+                <div class="py-2 controls">
+                    <div class="form-row">
+                        <div class="col order-first">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="form_firstname">Firstname *</label>
+                                        <input id="form_firstname" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Lastname *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                        <small id="emailHelp" class="form-text text-muted">Don't worry your email won't be shared.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row-md-2">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your message *" rows="4" required="required" data-error="Please, leave a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" id="form-button" class="btn btn-success btn-send" value="Send message">
+                            <p id="my-form-status"></p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <div id="geo-map">
+        <!-- Leaflet Javascript -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+    </div>
+    
