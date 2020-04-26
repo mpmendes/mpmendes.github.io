@@ -4,4 +4,5 @@ _site
 .jekyll-metadata
 vendor
 _sass/scss
+_sass/hover_scss
 node_modules/
