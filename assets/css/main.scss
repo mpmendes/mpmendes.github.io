@@ -1,8 +1,8 @@
 ---
 ---
-@import "scss/functions";
+@import "bootstrap_scss/functions";
 @import "variables";
-@import "scss/bootstrap";
+@import "bootstrap_scss/bootstrap";
 // TODO: separate into different scss and import them into this main scss
 // overall structure constants
 $viewport-height: 100vh;
