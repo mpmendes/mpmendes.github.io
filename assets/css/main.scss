@@ -18,7 +18,7 @@ $home-background-height: 100vh;
     // min-height: 500px;
     //TODO: change this magic number here to proper value for navbar padding, I couldn't find it!
     margin-top: -56px;
-    background: url({{ 'assets/img/space.jpg' | prepend: site.baseurl }}) no-repeat center center fixed; 
+    background: url({{ '/assets/img/space.jpg' | prepend: site.baseurl }}) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -32,7 +32,7 @@ $home-background-height: 100vh;
 #contactBackground {
     height: $home-background-height;
     margin-top: -56px;
-    background: url({{ 'assets/img/image2' | prepend: site.baseurl }}) no-repeat center center fixed; 
+    background: url({{ '/assets/img/image2' | prepend: site.baseurl }}) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
