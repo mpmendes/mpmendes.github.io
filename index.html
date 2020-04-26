@@ -1,61 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keyword" content="miguelmendes miguel mendes sofware developer" />
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#layout: home
+layout: default
+title: Home
+---
+<script>
+    $(document).ready(function(){
+        $(".active").removeClass("active");
+        $("#link-home").addClass("active");
+      });
+</script>
 
-    <!-- Bootstrap CSS overloaded -->
-    <link rel="stylesheet" href="/assets/css/main.css">
-    
-    <meta property="og:locale" content="en_US" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Miguel Mendes" />
-    <meta property="og:description" content="A curious software developer." />
-    <meta property="og:site_name" content="Miguel Mendes" />
-    <title>Miguel Mendes</title>
-</head>
-
-<body>
-
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                      <span class="sr-only">(current)</span>
-                    </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <!-- Bootstrap , jQuery, Popper -->
-    <script src="assets/vendor/jquery.min.js"></script>
-    <script src="assets/vendor/popper.min.js"></script>
-    <script src="assets/vendor/bootstrap.min.js"></script>
-
-</body>
-</html>
+<!-- Background Home Page -->
+<header id="homeBackground" class="general-container">
+  <div class="jumbotron jumbotron-fluid transparent-color">
+    <div class="container">
+      <h1 data-aos="fade-down" class="display-2">Software Developer.</h1>
+      <h3 data-aos="fade-down" class="display-4">Welcome to my home on the web.</h3>
+    </div>
+  </div>
+</header>
 
 
+<!-- Page Content -->
+
+<!-- Introduction -->
+<section class="py-5">
+    <div class="container">
+        <div class="row justify-content-around align-items-center">
+            <h1 data-aos="fade-right">About</h1>
+            <div data-aos="fade-right" class="col-4">
+              <p class="text-justify">
+                Hello! My name is Miguel and I'm curious guy always striving to learn! I'm currently working at Bosch as software developer.
+                Professionally I am interested in a broad range of topics (they seem to continuously keep growing!), like algorithm development, CI/CD systems, container orchestration, perception systems...
+                <br>
+                <br>
+                On my spare time, I like to cook, read, travel, working out and learn new technologies.
+                <br>
+                <br>
+                This website will be the result of one of those endeavours. I will try to continuously update it with some of my learnings and other side projects that I might be working on.
+                In the meantime, you are invited to take a more detailed look on some of my work.
+            </div>
+            <div data-aos="fade-left" class="col-6 image-container img-responsive">
+                <img class="shadow-image" src="{{ 'assets/img/home_photo.jpg' | absolute_url }}"/>
+            </div>
+      </div>
+    </div>
+</section>
 
 
-
+<!-- Add here later on some "work", with an example of work and then some animated screenshots of other work with < > scrolling, then a read more!  -->
