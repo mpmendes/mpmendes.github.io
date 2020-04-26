@@ -3,3 +3,134 @@
 @import "scss/functions";
 @import "variables";
 @import "scss/bootstrap";
+// TODO: separate into different scss and import them into this main scss
+// overall structure constants
+$viewport-height: 100vh;
+// TODO: for now commented, as I am unsure of the size that I want per default
+// section {
+//     height: $viewport-height; 
+// }
+
+// header customs
+$home-background-height: 100vh;
+#homeBackground {
+    height: $home-background-height;
+    // min-height: 500px;
+    //TODO: change this magic number here to proper value for navbar padding, I couldn't find it!
+    margin-top: -56px;
+    background: url({{ 'assets/img/space.jpg' | absolute_url }}) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    .transparent-color {
+        color: white;
+        background-color: transparent;
+    }    
+}
+
+// TODO: remove this and readapt the homeBackground
+#contactBackground {
+    height: $home-background-height;
+    margin-top: -56px;
+    background: url({{ 'assets/img/image2' | absolute_url }}) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    .transparent-color {
+        color: white;
+        background-color: transparent;
+    }    
+}
+
+.shadow-image {
+    filter:drop-shadow(30px 10px 4px gray); 
+}
+
+.general-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    height: $home-background-height;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+
+
+// contact page leaflet map
+#geo-map { 
+    height: 350px; 
+}
+
+
+
+// footer customs
+
+#footer-element {
+    background-color: $gray-800;
+    .align-center {
+        text-align: center;
+    }
+    #svg-logo p {
+        display: inline-block;
+     
+    }
+}
+.btn.btn-rounded {
+    border-radius: 50px
+}
+
+.btn-outline-linkedin {
+    border: 1px solid #0177b5;
+    color: #0177b5
+}
+
+.btn-outline-linkedin:hover {
+    background: #0177b5;
+    color: #ffffff
+}
+
+.btn-linkedin {
+    background: #0177b5;
+    color: #ffffff
+}
+
+.btn-linkedin:hover,
+.btn-linkedin:focus {
+    background: #015682;
+    color: #ffffff
+}
+
+
+.btn-outline-facebook {
+    border: 1px solid #203e5f;
+    color: #356194;
+}
+
+.btn-outline-facebook:hover {
+    background: #203e5f;
+    color: #ffffff
+}
+
+.btn-facebook {
+    background: #070f13;
+    color: #ffffff
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+    background: #015682;
+    color: #ffffff
+}
