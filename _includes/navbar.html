@@ -1,28 +1,36 @@
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">Start Bootstrap</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+  <!-- Navigation -->
+        <nav id="top-section" class="navbar navbar-expand-sm navbar-dark scrolling-navbar">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto smooth-scroll">
+                  <li id="link-home" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="{{ '' | absolute_url }}">Home
                       <span class="sr-only">(current)</span>
                     </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      
+                  </li>
+                  <li id="link-resume" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="{{ 'resume/' | absolute_url }}">Resume</a>
+                  </li>
+                  <li id="link-projects" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="{{ 'projects/' | absolute_url }}">Projects</a>
+                  </li>
+                  <li id="link-contact" class="nav-item">
+                    <a class="nav-link hvr-underline-reveal" href="{{ 'contact/' | absolute_url }}">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          
+
+<!-- Because of updating the active navbar items, we have to call out the libraries before the actual content
+    otherwise there is no update on the active items -->
+    <script src="{{'assets/vendor/jquery.min.js' | absolute_url}}"></script>
+    <script src="{{'assets/vendor/popper.min.js' | absolute_url}}"></script>
+    <script src="{{'assets/vendor/bootstrap.min.js' | absolute_url}}"></script>
