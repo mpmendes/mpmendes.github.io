@@ -9,18 +9,18 @@
               <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto smooth-scroll">
                   <li id="link-home" class="nav-item">
-                    <a class="nav-link hvr-underline-reveal" href="{{ '' | absolute_url }}">Home
+                    <a class="nav-link hvr-underline-reveal" href="{{ '' | prepend: site.baseurl }}">Home
                       <span class="sr-only">(current)</span>
                     </a>
                   </li>
                   <li id="link-resume" class="nav-item">
-                    <a class="nav-link hvr-underline-reveal" href="{{ 'resume/' | absolute_url }}">Resume</a>
+                    <a class="nav-link hvr-underline-reveal" href="{{ '/resume/' | prepend: site.baseurl }}">Resume</a>
                   </li>
                   <li id="link-projects" class="nav-item">
-                    <a class="nav-link hvr-underline-reveal" href="{{ 'projects/' | absolute_url }}">Projects</a>
+                    <a class="nav-link hvr-underline-reveal" href="{{ '/projects/' | prepend: site.baseurl }}">Projects</a>
                   </li>
                   <li id="link-contact" class="nav-item">
-                    <a class="nav-link hvr-underline-reveal" href="{{ 'contact/' | absolute_url }}">Contact</a>
+                    <a class="nav-link hvr-underline-reveal" href="{{ '/contact/' | prepend: site.baseurl }}">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -31,6 +31,6 @@
 
 <!-- Because of updating the active navbar items, we have to call out the libraries before the actual content
     otherwise there is no update on the active items -->
-    <script src="{{'assets/vendor/jquery.min.js' | absolute_url}}"></script>
-    <script src="{{'assets/vendor/popper.min.js' | absolute_url}}"></script>
-    <script src="{{'assets/vendor/bootstrap.min.js' | absolute_url}}"></script>
+    <script src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+    <script src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
