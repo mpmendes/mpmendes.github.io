@@ -18,12 +18,13 @@
       status.innerHTML = "Oops! There was a problem.".fontcolor("red");
     } 
     // handle the form submission event
-
-    form.addEventListener("submit", function(ev) {
-      ev.preventDefault();
-      let data = new FormData(form);
-      ajax(form.method, form.action, data, success, error);
-    });
+    if (form) {
+      form.addEventListener("submit", function (ev) {
+        ev.preventDefault();
+        let data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    }
   });
   
   // helper function for sending an AJAX request
